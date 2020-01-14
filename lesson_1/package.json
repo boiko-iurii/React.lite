@@ -1,0 +1,24 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "my first node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boiko-iurii/React.lite.git"
+  },
+  "author": "Iurii Boiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boiko-iurii/React.lite/issues"
+  },
+  "homepage": "https://github.com/boiko-iurii/React.lite#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "rc-slider": "^8.7.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
