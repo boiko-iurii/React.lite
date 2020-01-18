@@ -1,21 +1,26 @@
 // Task 1
 // Создайте класс Man, класс должен описывать человека и содержать свойства name, age, passport, sex. Создайте на его основе объект man. Выведите объект в консоль.
 
-const woman = new Man('Adele', 31, 'unknown', 'woman');
-console.log(woman);
+const man = new Man(
+    'Dima',
+    38,
+    'have',
+    'man'
+);
+console.log(man);
 
 // Task 2
 // Создайте класс Employer, который будет наследоваться от Man. Класс должен содержать поля create - дату начала работы, salary. Создайте объект employer на основе Employer. Заполните поля, выведите в консоль.
 
-class Employer extends Man {
-    constructor(name, age, passport, sex, create, salary) {
-        super(name, age, passport, sex)
-        this.create = create;
-        this.salary = salary;
-    }
-}
-
-const employer = new Employer('Iurii', 33, 'have', 'man', '02 October 2018', 500 + '$');
+const employer = new Employer(
+    'Iurii',
+    33,
+    'have',
+    'man',
+    '02 October 2018',
+    500 + '$',
+    'fff'
+);
 
 console.log(employer);
 
@@ -26,12 +31,17 @@ console.log(employer);
 // Task 4
 // Примените метод render к man и выведите его содержимое в .out-1.
 
+man.render('.out-1');
 
 // Task 5
 // Примените метод render к employer и выведите его содержимое в .out-2. Как видите поля create, salary не выводятся.
 
+employer.render('.out-2');
+
 // Task 6
 // Поскольку у Employer метод render не выводит все новые поля, то их желательно добавить. Вначале сделаем в лоб - просто создайте метод render еще раз в Employer (скопируйте его из Man) и добавьте в "лоб" новые поля. Убедитесь что метод работает.
+
+
 
 // Task 7
 // Но, перезаписывать методы - идея так себе, в чем тогда смысл наследования? Давайте попробуем дополнить метод. Закомментируйте метод render в Employer. Теперь напишите:
@@ -44,5 +54,12 @@ console.log(employer);
 // Task 8
 // Создайте для Employer геттер для получения имени клиента. Само свойство name, переделайте в _name. Продемонстрируйте работу.
 
+console.log(employer.name);
+
 // Task 9
 // Создайте для Employer сеттер для сохранения имени клиента в свойство _name. Сеттер должен проверять имя на строку, обрезать пробелы. Продемонстрируйте работу.
+
+employer.name = '  Ivan      ';
+
+console.log(employer.name);
+
