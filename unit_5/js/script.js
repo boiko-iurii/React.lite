@@ -5,18 +5,20 @@ const car = {
     model: 'Nissan',
     weight: '1350',
     color: 'aqua',
+    mileage: 153000,
     go: function () {
         console.log(`go ${this.model}`);
     }
 }
 
-console.log(car)
-
 // Task 2
 // Создайте объект ford, добавьте свойство year. Выведите объект в консоль.
 
 const ford = {
-    year: '2015'
+    year: '2015',
+    go: function () {
+        console.log(`${this.year}, ${this.color}`);
+    }
 }
 
 console.log(ford);
@@ -38,27 +40,27 @@ ford.go();
 // Task 5
 // Добавьте в car новое свойство mileage. Проверьте, появилось ли подобное свойство у ford?
 
-car.mileage = 153000;
-
-console.log(car.mileage);
 console.log(ford.mileage);
 
 // Task 6
 // Создайте у ford метод go(), который выводит информацию о годе производства и цвете в консоль.
 
-ford.go = function () {
-    console.log(`${this.year}, ${this.color}`);
-}
-
 // Task 7
 // Вызовите у ford метод go принадлежащий прототипу.
 
-// car.go.call(ford);
+ford.__proto__.go();
 
 // Task 8
 // Создайте объект chevrolet, укажите в качестве прототипа объект ford. Проверьте наличие у chevrolet свойств model, color, mileage и метода go().
 
-const chevrolet = {};
+const chevrolet = {
+    body_style: 'truck',
+    drive_type: 'four wheel drive',
+    go: function () {
+        console.log('go Chevrolet')
+    }
+};
+
 Object.setPrototypeOf(chevrolet, ford);
 
 console.log(chevrolet.model, chevrolet.color, chevrolet.mileage, chevrolet.go);
@@ -71,3 +73,7 @@ console.log(chevrolet.model, chevrolet.color, chevrolet.mileage, chevrolet.go);
 
 // Task 11
 // Переберите и выведите с помощью цикла все свойства объекта chevrolet.
+
+for (const key in chevrolet) {
+    console.log(`${key}: ${chevrolet[key]}`);
+}
