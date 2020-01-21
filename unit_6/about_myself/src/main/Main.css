@@ -1,0 +1,14 @@
+main {
+    padding: 60px 0;
+}
+.content {
+    columns: 2;
+    column-gap: 6em;
+}
+
+@media (max-width: 767px) {
+    .content {
+        columns: 1;
+    }
+
+}
