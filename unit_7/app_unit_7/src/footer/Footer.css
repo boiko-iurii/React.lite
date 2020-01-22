@@ -1,0 +1,20 @@
+.app-footer {
+    background-color: #c2c2c2;
+    /* padding: 20px 0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+.app-footer ul {
+    width: 15%;
+}
+.copyrights {
+    width: 100%;
+    background: #777777;
+    margin: 0;
+    padding: 1em 0;
+}
