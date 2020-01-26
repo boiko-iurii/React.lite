@@ -1,0 +1,52 @@
+.App {
+  width: 30%;
+  margin: 20px auto;
+}
+#form {
+  border-radius: 16px;
+  padding: 4.5em 3em 3em;
+  box-shadow: 2px 2px 5px 0 rgba(119, 119, 119, 0.5);
+}
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: inherit;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+}
+input[type="number"],
+textarea,
+input[type="range"] {
+  width: 100%;
+ }
+input[type="number"],
+input[type="range"],
+input, textarea, select {
+  margin-bottom: 30px;
+}
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+.table {
+  margin-top: 20px;
+}
+.table-head,
+.table-row {
+  display: flex;
+  height: 3em;
+  line-height: 3em;
+  border-bottom: 1px solid #e8e8e8;
+}
+.table-head > div,
+.table-row > div {
+  width: 50%;
+  text-align: center;
+}
