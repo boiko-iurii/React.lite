@@ -21,3 +21,8 @@ button {
 button:hover {
   color: red;
 }
+.div12 {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
