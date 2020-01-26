@@ -1,0 +1,28 @@
+
+.App {
+  width: 60%;
+  margin: 20px auto;  
+}
+.mouse-container {
+  height: 200px;
+  background: green;
+}
+button {
+  height: 3em;
+  font-weight: bold;
+  color: #3f51b5;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  margin: 0.5em;
+  padding: 0 1.5em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+button:hover {
+  color: red;
+}
+.div12 {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+}
