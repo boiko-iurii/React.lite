@@ -35,18 +35,6 @@ input[type="number"]:focus {
   outline: none;
   border-color: #4caf50;
 }
-.table {
+table {
   margin-top: 20px;
-}
-.table-head,
-.table-row {
-  display: flex;
-  height: 3em;
-  line-height: 3em;
-  border-bottom: 1px solid #e8e8e8;
-}
-.table-head > div,
-.table-row > div {
-  width: 50%;
-  text-align: center;
 }
