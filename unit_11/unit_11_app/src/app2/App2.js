@@ -2,13 +2,22 @@ import React from 'react';
 import './App2.css';
 
 class App2 extends React.Component {
-
+  constructor(props) {
+    super(props)
+    this.state = {
+      y1: ''
+    }
+  }
+  static getDerivedStateFromProps(props, state) {
+    return {
+      y1: props.z1,
+    }
+  }
   render() {
-    let s3 = this.z1;
     return (
       <div className="App2">
-        <h1>App 2</h1>
-        {s3}
+        <p>{this.props.z1}</p>
+        <p>{this.state.y1 * 10}</p>
       </div >
     );
   }

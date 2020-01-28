@@ -16,6 +16,7 @@ class App extends React.Component {
     return {
       s1: props.a1,
       s2: props.a2,
+      s3: props.a1 * props.a2
     }
   }
 
@@ -32,7 +33,7 @@ class App extends React.Component {
         <p>{this.state.s3}</p>
         <h3>Task 4</h3>
         <h3>Task 5</h3>
-        <App2 z1={this.props.s3} />
+        <App2 z1={this.state.s3} />
       </div >
     );
   }
