@@ -25,10 +25,11 @@ class App extends React.Component {
     e.preventDefault();
     let out =
       <table>
-        <tbody><tr>
-          <th>Name</th>
-          <th>Значение</th>
-        </tr>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Значение</th>
+          </tr>
           <tr>
             <td>text</td>
             <td>{this.state.text}</td>
