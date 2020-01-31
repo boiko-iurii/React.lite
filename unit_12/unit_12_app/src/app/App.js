@@ -39,14 +39,15 @@ class App extends React.Component {
           countX: this.state.countX + currentCountX,
           countO: this.state.countO + currentCountO
         })
-        alert(s + ' winner');
+        alert(s + ' won.');
+        setTimeout(this.newGame, 2000);
       }
     }
   }
   isDraw = () => {
     if (this.state.squares.indexOf(null) === -1
       && this.winner === false)
-      alert('is draw');
+      alert('Is draw.');
   }
   clickHandler = event => {
     let data = event.target.getAttribute('data');

@@ -12,29 +12,32 @@
   border: 1px solid #777;
   box-sizing: border-box;
 }
-.new-game {
-  width: 100%;
-  height: 40px;
+.first-sign-btn, .new-game {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  line-height: 40px;
   border-radius: 10px;
-  background-color: #1fc8db;
-  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   border: 0;
-  margin-top: 20px;
   padding: 0 10px;
   cursor: pointer;
   outline: none;
 }
+.new-game {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  margin-top: 20px;
+}
 .new-game:hover {
-  background-image: linear-gradient(-141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: linear-gradient(321deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.new-game:active, .first-sign-btn:active {
+  outline: none;
+  border: 1px solid #fff;
 }
 .new-game:active {
   line-height: 38px;
-  outline: none;
-  border: 1px solid #fff;
 }
 .score {
   width: 100%;
@@ -47,9 +50,27 @@
 .score b {
   margin-left: 0.5em;
 }
-.score h5 {
+.score h5, .first-sign h5 {
+  width: 100%;
   margin: 0 0 0.5em 0;
 }
-.ttt-chose-sign {
+.ttt-chose-sign, .first-sign {
   margin-top: 15px;
+}
+.first-sign {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.first-sign-btn {
+  width: 40%;
+  height: 30px;
+  background: linear-gradient(135deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,1) 100%);
+  line-height: 30px;
+}
+.first-sign-btn:hover {
+  background: linear-gradient(325deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,1) 100%);
+}
+.first-sign-btn:active {
+  line-height: 28px;
 }
