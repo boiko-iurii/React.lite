@@ -10,21 +10,21 @@ class App extends React.Component {
     }
 
     let randomColor = () => {
-      let [r, g, b] = [
+      const [r, g, b] = [
         randomNumber(0, 255),
         randomNumber(0, 255),
         randomNumber(0, 255)
       ];
       return `rgb(${r}, ${g}, ${b})`;
     }
-    let arr3 = [1, 2, 3, 4, 5];
     let out3 = () => {
+      const arr3 = [1, 2, 3, 4, 5];
       return arr3.map((elem, index) => {
         return <p key={index}>{elem}</p>;
       })
     }
     let out4 = () => {
-      let arr4 = [1, 0, 1, 0];
+      const arr4 = [1, 0, 1, 0];
       return arr4.map((elem, index) => {
         let cls = (elem === 1) ? 'white' : 'black';
         return <div key={index} className={cls} >{elem}</div>;
