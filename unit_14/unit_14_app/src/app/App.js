@@ -11,22 +11,16 @@ import Footer from '../footer/Footer';
 
 class App extends React.Component {
   render() {
-
-    // const nav = this.props.nav;
-
+    const nav = this.props.nav;
     return (
       <Router>
         <div className="App">
           <Header />
           <ul>
-            <li><a href="/">Main page</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contacts">Contacts</a></li>
             {
-              // Object.keys(nav).map(elem => {
-
-              //   return <li><a href={nav[elem]}>{elem}</a></li>
-              // })
+              Object.keys(nav).map((elem, i) => {
+                return <li><a key={i} href={elem}>{nav[elem]}</a ></li>
+              })
             }
           </ul>
           <Switch>
@@ -37,7 +31,7 @@ class App extends React.Component {
           </Switch>
           <Footer />
         </div>
-      </Router>
+      </Router >
     );
   }
 }

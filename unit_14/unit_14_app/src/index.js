@@ -8,7 +8,7 @@ const nav = {
     main: 'Main',
     about: 'About',
     contacts: 'Contacts',
-    '404': '404'
+    '404': 404
 }
 
 ReactDOM.render(<App nav={nav} />, document.getElementById('root'));
