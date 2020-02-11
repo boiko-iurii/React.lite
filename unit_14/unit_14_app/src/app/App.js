@@ -19,7 +19,7 @@ class App extends React.Component {
           <ul>
             {
               Object.keys(nav).map((elem, i) => {
-                return <li><a key={i} href={elem}>{nav[elem]}</a ></li>
+                return <li key={i}><a href={elem}>{nav[elem]}</a ></li>
               })
             }
           </ul>

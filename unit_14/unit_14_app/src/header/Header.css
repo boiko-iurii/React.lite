@@ -2,4 +2,7 @@
     height: 150px;
     background: coral;
     text-align: center;
+    line-height: 150px;
+    font-size: 24px;
+    font-weight: 600;
 }
