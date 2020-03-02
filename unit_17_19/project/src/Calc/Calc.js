@@ -37,11 +37,11 @@ class Calc extends React.Component {
                 )
                 )}
               </select>
-              <input type="submit" value="Calc" />
+              <input type="submit" />
             </form>
           </div>
           <div>
-            <h4>Результат</h4>
+            <h4>Результат:</h4>
             <ul className="calc-res">
               <li>EUR {this.state.result}</li>
             </ul>
